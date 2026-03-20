@@ -45,3 +45,25 @@ For top-tier Operational Security (OPSEC), choose security-hardened or ephemeral
 **Use Case:** Privacy-conscious users who also want built-in tools for security testing.
 
 [Download through here](https://parrotsec.org/download/)
+
+
+TOR BROWSER OR TOR+PROXYCHAINS:
+  After downloading an OS of your choice it is recommended to setup TOR or TOR+PROXYCHAINS for acheving total anonymity while browsing or 
+  using tools such as nmap or running browsers such as firefox with proxychains and tor.
+
+
+TOR BROWSER:
+  setting up tor browser is as easy as it can be you can download it using the link below 
+  [Download through here](https://www.torproject.org/download/.)
+
+
+  TOR+PROXYCHAINS:
+   Proxychains is a tool that forces any application (like Nmap, SSH, or curl) to follow a specific path through a proxy server.
+   When youpair it with Tor, you are essentially telling your software:"Don't go to the internet directly; go through the Tor 
+   doorway first."
+
+   HOW TO SETUP:
+    To setup TOR+PROCHAINS for linux see the tor-proxychains-setup.sh file:
+    
+  [tor-proxychains-setup.sh](https://github.com/basimpookie01-rgb/OPSEC-GUIDE-SETUP/blob/main/tor-proxychains-setup.sh)
+     
