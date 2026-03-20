@@ -13,20 +13,21 @@ Tails
 
     The Concept: "The Amnesic System." It lives on a USB stick and leaves zero trace on the computer's hard drive.
     Use Case: Emergency communications, whistleblowing, or using public computers.
-    [Download through here](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tails.net/install/index.en.html&ved=2ahUKEwiOprO4qq2TAxXBHjQIHTlONF4QFnoECCMQAQ&usg=AOvVaw0zJiI4jdBjfxjBCYbLJAyL)
+    [Download through here]( https://tails.net/install/download/index.en.html)
 
 Whonix
 
     The Concept: "The Privacy Gateway." It separates the "networking" from the "user apps" so your real IP address can never leak.
     Use Case: Maximum anonymity while browsing or hosting onion services.
-    [Download through here](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.whonix.org/wiki/Download&ved=2ahUKEwjvy4fGqq2TAxU5PjQIHR_6Ab4QFnoECAwQAQ&usg=AOvVaw166_bo-EES2B-AqZBR4WPn)
+    [Download through here](https://www.whonix.org)
 
 GrapheneOS (Mobile)
 
     The Concept: "Hardened Android." It takes the world's most popular mobile OS and strips out all Google tracking while adding massive hardware-level protection.
     Use Case: Secure mobile communication.
-    [Download through here](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://grapheneos.org/install/&ved=2ahUKEwjsr9DXqq2TAxWVEzQIHZDLHsAQFnoECBsQAQ&usg=AOvVaw36tPxQ52Xnvtr7VioM0FCL)
-Debian GNU/Linux
+    [Download through here](https://grapheneos.org/install.)
+
+   Debian GNU/Linux
 
     The Concept: "The Universal Operating System." It is the gold standard for stability and freedom. Most other secure OSs (Tails, Whonix, Kali) are built on top of Debian.
     Use Case: A clean, minimal "Daily Driver" that you can harden yourself.
@@ -36,6 +37,7 @@ Parrot Security OS
 
     The Concept: A Debian-based OS designed for security experts. It includes "AnonSurf," which can route your entire system traffic through Tor with one click.
     Use Case: Privacy-conscious users who also want built-in tools for security testing.
-    [Download through here](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://parrotsec.org/download/&ved=2ahUKEwiC2cSMq62TAxVPODQIHardNIEQFnoECAwQAQ&usg=AOvVaw1mqaumw4mR4mKKXiag6f8l)
+    [Download through here](https://www.google.com/url?sa=i&source=web&rct=j&url=https://parrotsec.org/download/
+    &ved=2ahUKEwjN9ceXr62TAxVtGDQIHeD0CT8Qy_kOegYIAQgGEAE&opi=89978449&cd&psig=AOvVaw39Y5b0sTac0wuo0FVx1Gj5&ust=1774057998125000)
 
 
