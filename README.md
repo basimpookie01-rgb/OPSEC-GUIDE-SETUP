@@ -1,41 +1,47 @@
 # OPSEC-GUIDE-SETUP:
 Operational security essentials for everyone. This repository collects materials on personal security practices to mitigate the risk of tracking and surveillance in daily life.
 
-CHOOSING AN OS:
- For top-tier Operational Security (OPSEC), choose security-hardened or ephemeral operating systems designed to minimize footprints and maximize anonymity. Choosing an Operating System (OS) is the most critical decision in your security stack. Your OS is the "root of trust"; if the OS is compromised or poorly designed, no amount of VPNs, encrypted apps, or strong passwords can save your data. Following are the list of OS that can help you create an anonymous connection to the internet. Following are the list of security hardening purpose based OS compatible for different devices:
+## CHOOSING AN OS:
+For top-tier Operational Security (OPSEC), choose security-hardened or ephemeral operating systems designed to minimize footprints and maximize anonymity. Choosing an Operating System (OS) is the most critical decision in your security stack. Your OS is the "root of trust"; if the OS is compromised or poorly designed, no amount of VPNs, encrypted apps, or strong passwords can save your data. Following are the list of OS that can help you create an anonymous connection to the internet. Following are the list of security hardening purpose based OS compatible for different devices:
 
-Qubes OS
+### Qubes OS
+**The Concept:** "Security by Isolation." It turns one computer into dozens of tiny, isolated computers.
 
-    The Concept: "Security by Isolation." It turns one computer into dozens of tiny, isolated computers.
-    Use Case: Your "Daily Driver" for high-risk work.
-    [Download through here](https://www.qubes-os.org/downloads/)
+**Use Case:** Your "Daily Driver" for high-risk work.
 
-Tails
+[Download through here](https://www.qubes-os.org/downloads/)
 
-    The Concept: "The Amnesic System." It lives on a USB stick and leaves zero trace on the computer's hard drive.
-    Use Case: Emergency communications, whistleblowing, or using public computers.
-    [Download through here](https://tails.net/install/download/)
+### Tails
+**The Concept:** "The Amnesic System." It lives on a USB stick and leaves zero trace on the computer's hard drive.
 
-Whonix
+**Use Case:** Emergency communications, whistleblowing, or using public computers.
 
-    The Concept: "The Privacy Gateway." It separates the "networking" from the "user apps" so your real IP address can never leak.
-    Use Case: Maximum anonymity while browsing or hosting onion services.
-    [Download through here](https://www.whonix.org/wiki/Download)
+[Download through here](https://tails.net/install/download/)
 
-GrapheneOS (Mobile)
+### Whonix
+**The Concept:** "The Privacy Gateway." It separates the "networking" from the "user apps" so your real IP address can never leak.
 
-    The Concept: "Hardened Android." It takes the world's most popular mobile OS and strips out all Google tracking while adding massive hardware-level protection.
-    Use Case: Secure mobile communication.
-    [Download through here](https://grapheneos.org/install/)
+**Use Case:** Maximum anonymity while browsing or hosting onion services.
 
-Debian GNU/Linux
+[Download through here](https://www.whonix.org/wiki/Download)
 
-    The Concept: "The Universal Operating System." It is the gold standard for stability and freedom. Most other secure OSs (Tails, Whonix, Kali) are built on top of Debian.
-    Use Case: A clean, minimal "Daily Driver" that you can harden yourself.
-    [Download through here](https://www.debian.org/download)
+### GrapheneOS (Mobile)
+**The Concept:** "Hardened Android." It takes the world's most popular mobile OS and strips out all Google tracking while adding massive hardware-level protection.
 
-Parrot Security OS
+**Use Case:** Secure mobile communication.
 
-    The Concept: A Debian-based OS designed for security experts. It includes "AnonSurf," which can route your entire system traffic through Tor with one click.
-    Use Case: Privacy-conscious users who also want built-in tools for security testing.
-    [Download through here](https://parrotsec.org/download/)
+[Download through here](https://grapheneos.org/install/)
+
+### Debian GNU/Linux
+**The Concept:** "The Universal Operating System." It is the gold standard for stability and freedom. Most other secure OSs (Tails, Whonix, Kali) are built on top of Debian.
+
+**Use Case:** A clean, minimal "Daily Driver" that you can harden yourself.
+
+[Download through here](https://www.debian.org/download)
+
+### Parrot Security OS
+**The Concept:** A Debian-based OS designed for security experts. It includes "AnonSurf," which can route your entire system traffic through Tor with one click.
+
+**Use Case:** Privacy-conscious users who also want built-in tools for security testing.
+
+[Download through here](https://parrotsec.org/download/)
