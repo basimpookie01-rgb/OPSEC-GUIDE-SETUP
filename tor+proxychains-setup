@@ -1,55 +1,39 @@
-Setting up Tor with Proxychains is a foundational Operational Security (OpSec) technique used to anonymize network traffic by routing it through multiple nodes, making it extremely difficult to trace the original IP address.
- 
-What Tor and Proxychains Offer:
+# Tor + Proxychains Setup
 
-    Tor (The Onion Router): A decentralized network that encrypts traffic in multiple layers and routes it through at least three volunteer-run relays (nodes).
-        Offers: IP masking, high anonymity, traffic analysis resistance, and access to .onion services.
-    Proxychains: A tool that forces any TCP connection from an application to go through one or more proxy servers (HTTP, SOCKS4, SOCKS5, or Tor).
-        Offers: Traffic redirection, multi-hop chaining (passing through several proxies), and the ability to use applications that don't support proxying by default. 
+## Installation
 
-HOW TO SETUP:
- Setup on Linux (Debian / Ubuntu / Kali)
-Proxychains is usually pre-installed on Kali. For Debian/Ubuntu, it is installed using proxychains4 (also known as Proxychains-NG). 
-Step 1: Install Tor and Proxychains4 
+Make sure to install `tor` and `proxychains`. You can do this using the following commands:
+
 ```bash
-# Update package lists and install Tor and Proxychains
-sudo apt update
-sudo apt install tor proxychains4 -y
+sudo apt install tor proxychains
+```
 
-Step 2: Start and Enable Tor Service 
+## Configuration
+
+Edit the `proxychains` configuration file:
+
 ```bash
-# Start the Tor service
+sudo nano /etc/proxychains.conf
+```
+
+Make sure to set the dynamic chain mode:
+
+```plaintext
+# dynamic_chain
+```
+
+## Starting Tor
+
+To start Tor, use the following command:
+
+```bash
 sudo service tor start
+```
 
-# Verify it is running
-service tor status
+## Running with Proxychains
 
-
-Step 3: Configure Proxychains
-Edit the configuration file. 
-```bash
-# Open the Proxychains configuration file for editing
-sudo nano /etc/proxychains4.conf
-
-
-    Uncomment dynamic_chain (removes the #): This ensures if one proxy fails, the chain continues.
-    Comment out strict_chain: Strict requires all proxies to work; dynamic is more reliable.
-    Uncomment proxy_dns: This is crucial to prevent DNS leaks.
-    Add Tor to the list: At the end of the file, ensure the following is present (SOCKS5 is recommended):
-    conf
+To run a command with Proxychains, prepend `proxychains`:
 
 ```bash
-# Add this line at the bottom of /etc/proxychains4.conf
-socks5 127.0.0.1 9050
-
-
- 
-
-Step 4: Use it
-Prefix any command with proxychains4. 
-bash
-
-```bash
-# Launch Firefox through Proxychains to check for DNS leaks
-proxychains4 firefox https://dnsleaktest.com
-
+proxychains curl ifconfig.me
+```
