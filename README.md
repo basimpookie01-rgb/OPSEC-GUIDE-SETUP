@@ -76,8 +76,8 @@ For top-tier Operational Security (OPSEC), choose security-hardened or ephemeral
    ### SETUP:
   [see this setup file](https://github.com/basimpookie01-rgb/OPSEC-GUIDE-SETUP/blob/main/vpn-ks.sh)
 
-  ###EXPLANATION OF THE STACK:
-          The "Chain of Trust"
+  ### EXPLANATION OF THE STACK:
+  The "Chain of Trust"
 Your PC → UFW (Gatekeeper) → VPN (ISP Privacy) → Tor (Anonymity) → Proxychains (App Control) → The Internet
 This setup ensures that even if one layer is compromised (e.g., a malicious Tor Exit Node), they only see the VPN IP, not your real IP.
      
