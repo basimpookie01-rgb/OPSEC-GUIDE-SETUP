@@ -66,4 +66,20 @@ TOR BROWSER:
     To setup TOR+PROCHAINS for linux see the tor-proxychains-setup.sh file:
     
   [tor-proxychains-setup.sh](https://github.com/basimpookie01-rgb/OPSEC-GUIDE-SETUP/blob/main/tor-proxychains-setup.sh)
+
+
+  VPN + KILL SWITCH (OPTIONAL):
+   The VPN hides your IP from your ISP and encrypts all system traffic (updates, background apps).
+   Think of it as "Onion of defences".
+   The UFW Kill Switch ensures that if the VPN app crashes, your real IP isn't accidentally exposed for even a millisecond.
+   This firewall kill switch will cut your wifi if your vpn breaks or somehow your connection gets lost it protects you from getting
+   expose.
+
+   SETUP:
+     [see this setup file](https://github.com/basimpookie01-rgb/OPSEC-GUIDE-SETUP/blob/main/vpn-ks.sh)
+
+  EXPLANATION OF THE STACK:
+          The "Chain of Trust"
+Your PC → UFW (Gatekeeper) → VPN (ISP Privacy) → Tor (Anonymity) → Proxychains (App Control) → The Internet
+This setup ensures that even if one layer is compromised (e.g., a malicious Tor Exit Node), they only see the VPN IP, not your real IP.
      
