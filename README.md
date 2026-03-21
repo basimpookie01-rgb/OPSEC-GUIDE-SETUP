@@ -53,6 +53,7 @@ For top-tier Operational Security (OPSEC), choose security-hardened or ephemeral
 
 ## TOR BROWSER:
   setting up tor browser is as easy as it can be you can download it using the link below 
+  
   [Download through here](https://www.torproject.org/download/.)
 
   ## TOR+PROXYCHAINS:
