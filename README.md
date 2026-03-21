@@ -47,38 +47,38 @@ For top-tier Operational Security (OPSEC), choose security-hardened or ephemeral
 [Download through here](https://parrotsec.org/download/)
 
 
-TOR BROWSER OR TOR+PROXYCHAINS:
+###TOR BROWSER OR TOR+PROXYCHAINS:
   After downloading an OS of your choice it is recommended to setup TOR or TOR+PROXYCHAINS for acheving total anonymity while browsing or 
   using tools such as nmap or running browsers such as firefox with proxychains and tor.
 
 
-TOR BROWSER:
+###TOR BROWSER:
   setting up tor browser is as easy as it can be you can download it using the link below 
   [Download through here](https://www.torproject.org/download/.)
 
 
-  TOR+PROXYCHAINS:
+  ###TOR+PROXYCHAINS:
    Proxychains is a tool that forces any application (like Nmap, SSH, or curl) to follow a specific path through a proxy server.
    When youpair it with Tor, you are essentially telling your software:"Don't go to the internet directly; go through the Tor 
    doorway first."
 
-   HOW TO SETUP:
+   ###HOW TO SETUP:
     To setup TOR+PROCHAINS for linux see the tor-proxychains-setup.sh file:
     
   [tor-proxychains-setup.sh](https://github.com/basimpookie01-rgb/OPSEC-GUIDE-SETUP/blob/main/tor-proxychains-setup.sh)
 
 
-  VPN + KILL SWITCH (OPTIONAL):
+  ###VPN + KILL SWITCH (OPTIONAL):
    The VPN hides your IP from your ISP and encrypts all system traffic (updates, background apps).
    Think of it as "Onion of defences".
    The UFW Kill Switch ensures that if the VPN app crashes, your real IP isn't accidentally exposed for even a millisecond.
    This firewall kill switch will cut your wifi if your vpn breaks or somehow your connection gets lost it protects you from getting
    expose.
 
-   SETUP:
+   ###SETUP:
      [see this setup file](https://github.com/basimpookie01-rgb/OPSEC-GUIDE-SETUP/blob/main/vpn-ks.sh)
 
-  EXPLANATION OF THE STACK:
+  ###EXPLANATION OF THE STACK:
           The "Chain of Trust"
 Your PC → UFW (Gatekeeper) → VPN (ISP Privacy) → Tor (Anonymity) → Proxychains (App Control) → The Internet
 This setup ensures that even if one layer is compromised (e.g., a malicious Tor Exit Node), they only see the VPN IP, not your real IP.
